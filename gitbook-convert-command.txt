@@ -1,0 +1,3 @@
+gitbook-convert -m 1 ./"Characters of the Chadoric Hyperlanes Alpha".docx ./chadoric-character-book
+
+from Downloads folder
