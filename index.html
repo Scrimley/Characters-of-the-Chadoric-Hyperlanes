@@ -33,6 +33,20 @@
       loadSidebar: './SUMMARY.md',
       subMaxLevel: 5,
       basePath: './',
+      plugins: [
+        function (hook) {
+          var footer = [
+            '<hr/>',
+            '<footer>',
+            '<span>This homebrew supplement is not sanctioned by or affiliated with Scrivened, LLC; or any other rights-holding company or entity.</span>',
+            '</footer>'
+          ].join('')
+
+          hook.afterEach(function (html) {
+            return html + footer
+          })
+        }
+      ],
     }
   </script>
   <script src="vendor/docsify.js"></script>
